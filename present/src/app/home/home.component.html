@@ -7,9 +7,7 @@
         <nav class="navbar">
             <h1 class="app-name">Present!</h1>
             <div class="icon-container">
-                <a href="#" class="notification-link">
-                    <i class="fas fa-bell notification-icon"></i>
-                </a>
+              <i class="fas fa-bell notification-icon"></i>
 
 
                 <div class="profile-container">
@@ -19,28 +17,25 @@
                     <span class="username">Username</span>
                 </div>
  
-                <!-- Menu Dropdown Added -->
+ 
+                <!-- Dropdown Menu -->
                 <div class="dropdown">
-                    <a href="#" class="menu-link">
-                        <i class="fas fa-bars menu-icon"></i>
-                    </a>
+                    <i class="fas fa-bars menu-icon"></i>
                     <div class="dropdown-content">
                         <a href="#">
                             <i class="fas fa-cogs"></i> Manage Class
                         </a>
-                        <a href="#">
+                        <a [routerLink]="['/createclass']">
                             <i class="fas fa-plus-circle"></i> Create Class
                         </a>
-                        <a href="#">
+                        <a [routerLink]="['/joinclass']">
                             <i class="fas fa-user-plus"></i> Join Class
                         </a>
-                    </div> <!-- Close dropdown-content -->
-                </div> <!-- Close dropdown -->
-            </div> <!-- Close icon-container -->
+                    </div>
+                </div>
+            </div>
         </nav>
-    </header>
-
-
+ 
        
  
           <main>

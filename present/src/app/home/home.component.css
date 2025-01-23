@@ -14,61 +14,66 @@ html, body {
     position: relative;
     background-color: #061A29;
   }
-   /* Navbar */
+  /* Navbar */
   .navbar {
-    background-color: #220540; /* Dark purple color for the navbar */
+    background-color: #220540;
     color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1;
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  /* App Name */
+ 
+ 
   .app-name {
     font-size: 1.5rem;
     margin: 0;
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  /* Icon Container */
-  .icon-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  
-  
-  
-  
-  /* Notification and Menu Icons */
-  .notification-icon,
+ 
+ 
+ /* Icon Container */
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icons */
+}
+
+
+
+
+/* Notification icon */
+.notification-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+
+   
+   
+  /* Menu icon */
   .menu-icon {
     font-size: 1.5rem;
     cursor: pointer;
-    margin-left: 10px;
     color: #ffffff;
+    padding: 8px; /* Increase clickable area of menu button */
+    border-radius: 4px; /* Add slight border radius for better aesthetics */
+    transition: background-color 0.3s ease; /* Smooth background change on hover */
   }
   
   
   
   
-  /* Dropdown Menu */
+  /* Menu icon hover effect */
+  .menu-icon:hover {
+    background-color: #3E1A7C; /* Darken the button when hovered */
+  }
+  
+  
+  
+  
+  /* Dropdown styles */
   .dropdown {
     position: relative;
     display: inline-block;
@@ -119,10 +124,6 @@ html, body {
   .dropdown:hover .dropdown-content {
     display: block;
   }
-  
-  
-  
-  
    
     /* Profile container */
     .profile-container {
