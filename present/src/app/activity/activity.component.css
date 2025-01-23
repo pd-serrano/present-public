@@ -1,0 +1,347 @@
+/* Container styles */
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #061A29;
+  }
+ 
+ 
+  .profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+ 
+ 
+  .profile-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    background-color: #A06CD5;
+    border-radius: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+ 
+ 
+  .profile-icon {
+    font-size: 50px;
+    color: black;
+  }
+ 
+ 
+  .username {
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+  }
+ 
+ 
+  /* Navbar */
+  .navbar {
+    background-color: #220540;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+ 
+ 
+  .app-name {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+ 
+ 
+ /* Icon Container */
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icons */
+}
+
+
+/* Notification icon */
+.notification-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+ 
+/* Menu icon */
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 8px; /* Increase clickable area of menu button */
+  border-radius: 4px; /* Add slight border radius for better aesthetics */
+  transition: background-color 0.3s ease; /* Smooth background change on hover */
+}
+
+
+/* Menu icon hover effect */
+.menu-icon:hover {
+  background-color: #3E1A7C; /* Darken the button when hovered */
+}
+
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0; /* Align dropdown to the right of the menu icon */
+  background-color: #220540;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 10px; /* Space between the menu and dropdown */
+  border-radius: 5px; /* Slightly rounded corners for dropdown */
+}
+
+
+/* Dropdown links */
+.dropdown-content a {
+  color: white;
+  padding: 16px 20px; /* Increased padding for easier clickability */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
+  transition: background-color 0.3s ease; /* Smooth background change on hover */
+}
+
+
+.dropdown-content a:hover {
+  background-color: #575757; /* Darker background on hover */
+  border-radius: 5px; /* Rounded corners for hover effect */
+}
+
+
+/* Show dropdown when menu icon is clicked */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+ 
+  /* Main Section */
+  .input-field {
+    width: 354px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40px;
+    padding-left: 30px;
+    padding-right: 16px;
+    border-radius: 13px;
+    border: 1.5px solid #A06CD5;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.68px;
+  }
+ 
+ 
+  .search-container {
+    position: absolute;
+    top: 80px; /* Adjust this to place it below the navbar */
+    right: 20px; /* Align to the right side with some margin */
+    display: flex;
+    align-items: center;
+    width: 354px; /* Keep the width of the search input */
+  }
+ 
+ 
+  .search-icon {
+    font-size: 10px;
+    color: #A06CD5;
+    margin-right: 10px;
+    padding-left: 13px;
+  }
+ 
+ 
+  /* Activity Log Section */
+  .activity-text {
+    width: fit-content;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 15px;
+    color: white;
+  }
+ 
+ 
+  .activity-log {
+    margin: 20px;
+    padding: 20px;
+    background-color: #061A29;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 250px;
+    width: 95%;
+  }
+ 
+ 
+  .activity-date {
+    font-size: 16px;
+    font-weight: 500;
+    color: #A6B0CF;
+    margin-bottom: 10px;
+  }
+ 
+ 
+  .activity-item {
+    display: flex;
+    align-items: center;
+    background-color: #1a2b3c;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #2A3B4D;
+    border-radius: 5px;
+  }
+ 
+ 
+  .activity-item:last-child {
+    border-bottom: none;
+  }
+ 
+ 
+  .icon-wrapper {
+    background-color: #162D40;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+ 
+ 
+  .icon-wrapper i {
+    font-size: 20px;
+    color: #A06CD5;
+  }
+ 
+ 
+  .activity-details {
+    flex: 1;
+    margin-left: 10px;
+  }
+ 
+ 
+  .activity-title {
+    font-size: 14px;
+    font-weight: 600;
+  }
+ 
+ 
+  .activity-class {
+    font-size: 12px;
+    color: #A6B0CF;
+  }
+ 
+ 
+  .activity-meta {
+    text-align: right;
+  }
+ 
+ 
+  .activity-time {
+    font-size: 14px;
+    font-weight: 600;
+    color: #A06CD5;
+  }
+ 
+ 
+  .activity-status {
+    font-size: 12px;
+    font-weight: 500;
+  }
+ 
+ 
+  .activity-status.late {
+    color: #FFAB40;
+  }
+ 
+ 
+  .activity-status.on-time {
+    color: #4CAF50;
+  }
+ 
+ 
+  .activity-status.absent {
+    color: #FF5252;
+  }
+ 
+ 
+  /* Bottom Navigation Bar */
+  .bottom-nav {
+    background-color: #220540;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    position: fixed; /* Fix it to the bottom of the viewport */
+    bottom: 0;       /* Align it to the bottom */
+    left: 0;         /* Stretch across the entire width */
+    width: 100%;     /* Ensure full width */
+    z-index: 10;     /* Ensure it stays above other elements */
+  }
+ 
+ 
+  .nav-item {
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    flex: 1;
+  }
+ 
+ 
+  .nav-item i {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+ 
+ 
+  .nav-item.activities {
+    color: #6200ea; /* Activities text and icon color */
+  }
+ 
+ 
+  .nav-item.activities i {
+    color: #6200ea; /* Activities icon color */
+  }
+ 
+ 
+  .nav-item.active {
+    color: #fff; /* Check-In text and icon color */
+  }
+ 
+ 
+  .nav-item.active i {
+    color: #fff; /* Check-In icon color */
+  }
+ 
