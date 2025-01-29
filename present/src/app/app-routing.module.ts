@@ -9,6 +9,11 @@ import { ViewclassenrolledComponent } from './viewclassenrolled/viewclassenrolle
 import { CheckinnotComponent } from './checkinnot/checkinnot.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
+import { SignUpComponent } from './sign-up/sign-up.component'; // SignUpComponent
+import { ActivityComponent } from './activity/activity.component'; // ActivityComponent
+import { CreateclassComponent } from './createclass/createclass.component'; // CreateClassComponent
+import { JoinclassComponent } from './joinclass/joinclass.component'; // JoinClassComponent
+
 
 
 const routes: Routes = [
@@ -21,6 +26,10 @@ const routes: Routes = [
   { path: 'checkinnot', component: CheckinnotComponent},
   { path: 'login', component: LoginComponent},
   { path: 'profile', component: ProfileComponent},
+  { path: 'signup', component: SignUpComponent },  // SignUp route
+  { path: 'activity', component: ActivityComponent },  // Activity route
+  { path: 'createclass', component: CreateclassComponent },  // Create Class route
+  { path: 'joinclass', component: JoinclassComponent },  // Join Class route
   { path: '**', redirectTo: '' } 
 ];
 
