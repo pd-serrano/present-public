@@ -47,40 +47,33 @@ body {
     color: #ffffff;
 }
 
-/* Profile container */
-.profile-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 100px;
-    left: 50%;
-    transform: translateX(-50%);
-    gap: 15px;
-  }
- 
-  .profile-icon-wrapper {
-    width: 80px;
-    height: 80px;
-    background-color: #A06CD5;
-    border-radius: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-  }
- 
-  .profile-icon {
-    font-size: 50px;
-    color: black;
-  }
- 
-  .username {
-    font-size: 25px;
-    font-weight: 500;
-    color: white;
-  }
+/* Profile container (removed) */
 
+/* Added logout icon container */
+.logout-icon-wrapper {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.logout-icon {
+    font-size: 4rem;
+    color: #A06CD5;
+}
+
+/* Added logout message */
+.logout-message {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logout-message p {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/* Menu icon hover */
 .menu-icon {
     padding: 8px;
     border-radius: 4px;
@@ -139,15 +132,17 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
     white-space: nowrap;
+    margin-top: 20px; /* Added margin for space between the message and the button */
 }
 
 .logout-button:hover {
     background-color: #8753A1;
 }
 
-/* Center logout button */
+/* Profile content alignment adjustments */
 .profile-content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
