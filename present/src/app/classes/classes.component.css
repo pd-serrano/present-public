@@ -91,9 +91,9 @@ body {
 
 /* Teaching Section */
 .teaching-text {
-    text-align: center;
-    font-size: 17px;
-    color: #A06CD5;
+    text-align: left;
+    font-size: 15px;
+    color: white;
     margin-top: 30px;
 }
 
