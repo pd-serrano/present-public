@@ -2,41 +2,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   </head>
-  <div class="container">
-    <header>
-        <nav class="navbar">
-            <h1 class="app-name">Present!</h1>
-            <div class="icon-container">
-              <i class="fas fa-bell notification-icon"></i>
-
-
-                <div class="profile-container">
-                    <div class="profile-icon-wrapper">
-                        <i class="fa-solid fa-user profile-icon"></i>
-                    </div>
-                    <span class="username">Username</span>
-                </div>
+      <div class="container">
+          <header>
+            <nav class="navbar">
+              <h1 class="app-name">Present!</h1>
  
+              <div class="icon-container">
+                <a href="#" class="notification-link">
+                  <i class="fas fa-bell notification-icon"></i>
+                </a>
+              </div>
+            </nav>
  
-                <!-- Dropdown Menu -->
-                <div class="dropdown">
-                    <i class="fas fa-bars menu-icon"></i>
-                    <div class="dropdown-content">
-                        <a href="#">
-                            <i class="fas fa-cogs"></i> Manage Class
-                        </a>
-                        <a [routerLink]="['/createclass']">
-                            <i class="fas fa-plus-circle"></i> Create Class
-                        </a>
-                        <a [routerLink]="['/joinclass']">
-                            <i class="fas fa-user-plus"></i> Join Class
-                        </a>
-                    </div>
-                </div>
+              <div class="profile-container">
+                  <div class="profile-icon-wrapper">
+                      <i class="fa-solid fa-user profile-icon"></i>
+                  </div>
+                  <span class="username">Username</span>
+              </div>
+          </header>
+ 
+          <!-- Dropdown Menu -->
+          <div class="dropdown">
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-label">
+              <i class="fas fa-bars"></i>
+            </label>
+            <div class="dropdown-content">
+              <a href="#"><i class="fa-solid fa-gear"></i> Manage Class</a>
+              <a [routerLink]="['/createclass']"><i class="fa-solid fa-plus"></i> Create Class</a>
+              <a [routerLink]="['/joinclass']"><i class="fa-solid fa-right-to-bracket"></i> Join Class</a>
             </div>
-        </nav>
- 
-       
+          </div>
  
           <main>
               <div class="search-container">
@@ -70,12 +67,6 @@
           </main>
 
 
-
-
-
-
-
-
           <footer class="bottom-nav">
               <a href="#" class="nav-item home">
                   <i class="fas fa-home"></i>
@@ -98,10 +89,5 @@
                   <span>Profile</span>
               </a>
           </footer>      
- 
-
-
-
-
-
-
+         
+      </div>

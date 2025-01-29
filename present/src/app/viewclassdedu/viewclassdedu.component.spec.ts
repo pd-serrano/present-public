@@ -1,26 +1,21 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { ViewclassdeduComponent } from './viewclassdedu.component';
 
-import { HomeComponent } from './home.component';
-
-
-describe('HomeComponent', () => {
-  let component: HomeComponent;
-  let fixture: ComponentFixture<HomeComponent>;
-
+describe('ViewclassdeduComponent', () => {
+  let component: ViewclassdeduComponent;
+  let fixture: ComponentFixture<ViewclassdeduComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [HomeComponent]
+      declarations: [ViewclassdeduComponent]
     })
     .compileComponents();
 
-
-    fixture = TestBed.createComponent(HomeComponent);
+    fixture = TestBed.createComponent(ViewclassdeduComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
-
 
   it('should create', () => {
     expect(component).toBeTruthy();
