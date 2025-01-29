@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Present!</title>
+    <link rel="stylesheet" href="profile.component.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <h1 class="app-name">Present!</h1>
+                <div class="icon-container">
+                    <i class="fas fa-bell notification-icon"></i>
+                    <div class="dropdown">
+                        <i class="fas fa-bars menu-icon"></i>
+                        <div class="dropdown-content">
+                            <a href="#">
+                                <i class="fas fa-cogs"></i> Manage Class
+                            </a>
+                            <a href="#">
+                                <i class="fas fa-plus-circle"></i> Create Class
+                            </a>
+                            <a href="#">
+                                <i class="fas fa-user-plus"></i> Join Class
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="profile-content">
+            <div class="profile-container">
+                <div class="profile-icon-wrapper">
+                    <i class="fa-solid fa-user profile-icon"></i>
+                </div>
+                <span class="username">Username</span>
+            </div>
+            <button class="logout-button">Logout</button>
+        </main>
+
+        <footer class="bottom-nav">
+            <a href="#" class="nav-item">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-tasks"></i>
+                <span>Activities</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <i class="fas fa-check-circle"></i>
+                <span>Check-In</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-chalkboard"></i>
+                <span>Classes</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </footer>
+    </div>
+</body>
+</html>
