@@ -1,0 +1,154 @@
+/* Container styles */
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #061A29;
+  }
+  
+
+  /* Title and welcome text */
+  .welcome-text {
+    width: fit-content;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+
+  .welcome-text span {
+    font-size: 32px;
+    line-height: 41.36px;
+  }
+  
+
+  .welcome-text .primary-text {
+    color: white;
+    font-weight: 400;
+  }
+  
+
+  /* Input fields */
+  .input-field {
+    width: 354px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 13px;
+    border: 1.5px solid #A06CD5;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.68px;
+  }
+  
+
+  .class-input {
+    top: 130px;
+  }
+  
+
+  .section-input {
+    top: 190px;
+  }
+  
+  
+  .subject-input {
+    top: 250px;
+  }
+  
+
+  .room-input {
+    top: 310px;
+  }
+  
+
+  .schedule-input {
+    top: 370px;
+  }
+  
+
+  .date-label {
+    position: absolute;
+    width: 354px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 430px;
+  }
+  
+ 
+  .date-field {
+    margin-bottom: 20px;
+  }
+  
+  
+  .date-label-text {
+    color: rgba(226, 207, 234, 0.58);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.68px;
+    margin-bottom: 10px;
+  }
+  
+  
+  /* Input fields for start and end date */
+  .start-date-input, .end-date-input {
+    width: 100%;
+    height: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 13px;
+    border: 1.5px solid #A06CD5;
+    background-color: transparent;
+    color: rgba(226, 207, 234, 0.58);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.68px;
+  }
+  
+  
+  .start-date-input {
+    position: relative;
+    top: 5px;
+  }
+  
+  
+  .end-date-input {
+    position: relative;
+    top: 5px;
+  }
+  
+  
+  .create-btn {
+    width: 380px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    position: absolute;
+    top: 610px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #A06CD5;
+    border-radius: 13px;
+    border: none;
+    color: #E2CFEA;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25.85px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  
+  .create-btn:hover {
+    background: #8E58A2;
+  }
+  

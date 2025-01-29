@@ -1,0 +1,231 @@
+/* You can add global styles to this file, and also import other style files */
+/* Prevent scrollbar */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif; /* Default font */
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #061A29;
+}
+
+.centered-text {
+  width: fit-content;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.centered-text span:first-child {
+  color: white;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 41.36px;
+}
+
+.centered-text span:nth-child(2) {
+  color: #A06CD5;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 41.36px;
+}
+
+.subtext {
+  width: 309px;
+  height: 23px;
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(226, 207, 234, 0.50);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.68px;
+  word-wrap: break-word;
+}
+
+.input-container {
+  width: 354px;
+  position: absolute;
+  top: 290px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.input-container input {
+  width: 354px;
+  height: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 13px;
+  border: 1.50px solid #A06CD5;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.68px;
+}
+
+.forgot-password {
+  position: absolute;
+  left: 56%;
+  top: 410px;
+  color: #A06CD5;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.51px;
+}
+
+.login-btn {
+  width: 350px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  position: absolute;
+  top: 460px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #A06CD5;
+  border-radius: 13px;
+  border: none;
+  color: #E2CFEA;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25.85px;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+
+.social-text {
+  width: 309px;
+  height: 23px;
+  position: absolute;
+  top: 550px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: rgba(226, 207, 234, 0.50);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.68px;
+  word-wrap: break-word;
+}
+
+.social-line {
+  width: 36px;
+  height: 0px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-180px);
+  top: 560px;
+  border: 1px rgba(226, 207, 234, 0.50) solid;
+}
+
+.social-line.right {
+  left: 50%;
+  transform: translateX(140px);
+}
+
+.google-btn {
+  width: 354px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  position: absolute;
+  top: 600px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 13px;
+  overflow: hidden;
+  border: 1.50px #A06CD5 solid;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+}
+
+.google-btn div {
+  align-self: stretch;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 6px;
+  display: inline-flex;
+}
+
+.google-btn div div {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.google-btn div div span {
+  position: absolute;
+}
+
+.google-btn div div span:nth-child(1) {
+  width: 3.99px;
+  height: 8.40px;
+  left: 3px;
+  top: 7.86px;
+  background: #FBBB00;
+}
+
+.google-btn div div span:nth-child(2) {
+  width: 8.80px;
+  height: 8.70px;
+  left: 12.20px;
+  top: 10.32px;
+  background: #518EF8;
+}
+
+.google-btn div div span:nth-child(3) {
+  width: 13.56px;
+  height: 7.12px;
+  left: 4.07px;
+  top: 13.88px;
+  background: #28B446;
+}
+
+.google-btn div div span:nth-child(4) {
+  width: 13.74px;
+  height: 7.26px;
+  left: 4.01px;
+  top: 3px;
+  background: #F14336;
+}
+
+.google-btn div span:last-child {
+  color: #E2CFEA;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25.85px;
+}
+
+.register-text {
+  width: 309px;
+  height: 23px;
+  position: absolute;
+  top: 670px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.register-text span {
+  color: #E2CFEA;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.68px;
+}
+
+.register-text span:nth-child(2) {
+  color: #A06CD5;
+}
+
+

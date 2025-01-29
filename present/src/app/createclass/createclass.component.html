@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centered Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    /* Prevent scrollbar */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Poppins', sans-serif; /* Default font */
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="container">
+    <div class="welcome-text">
+      <span class="primary-text">Create class</span>
+    </div>
+
+
+    <input type="class" class="input-field class-input" placeholder="Class name (required)">
+    <input type="section" class="input-field section-input" placeholder="Section">
+    <input type="subject" class="input-field subject-input" placeholder="Subject">
+    <input type="room" class="input-field room-input" placeholder="Room">
+    <input type="schedule" class="input-field schedule-input" placeholder="Schedule">
+
+
+    <div class="date-label">
+      <!-- Start Date Label and Input -->
+      <div class="date-field">
+        <span class="date-label-text">Start Date</span>
+        <input type="date" class="input-field start-date-input" id="start-date">
+      </div>
+   
+      <!-- End Date Label and Input -->
+      <div class="date-field">
+        <span class="date-label-text">End Date</span>
+        <input type="date" class="input-field end-date-input" id="end-date">
+      </div>
+    </div>
+
+
+    <a href="/createclass" class="create-btn">Create</a>
+   
+
+  </div>
+</body>
+</html>
+
+
+
+
+
+
