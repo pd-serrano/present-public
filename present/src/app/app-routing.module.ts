@@ -13,8 +13,7 @@ import { SignUpComponent } from './sign-up/sign-up.component'; // SignUpComponen
 import { ActivityComponent } from './activity/activity.component'; // ActivityComponent
 import { CreateclassComponent } from './createclass/createclass.component'; // CreateClassComponent
 import { JoinclassComponent } from './joinclass/joinclass.component'; // JoinClassComponent
-
-
+import { CheckinconnectComponent } from './checkinconnect/checkinconnect.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },         // Home page route
@@ -26,6 +25,7 @@ const routes: Routes = [
   { path: 'checkinnot', component: CheckinnotComponent},
   { path: 'login', component: LoginComponent},
   { path: 'profile', component: ProfileComponent},
+  { path: 'checkinconnect', component: CheckinconnectComponent},
   { path: 'signup', component: SignUpComponent },  // SignUp route
   { path: 'activity', component: ActivityComponent },  // Activity route
   { path: 'createclass', component: CreateclassComponent },  // Create Class route
