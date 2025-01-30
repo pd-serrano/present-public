@@ -25,11 +25,11 @@ const routes: Routes = [
   { path: 'checkinnot', component: CheckinnotComponent},
   { path: 'login', component: LoginComponent},
   { path: 'profile', component: ProfileComponent},
-  { path: 'checkinconnect', component: CheckinconnectComponent},
   { path: 'signup', component: SignUpComponent },  // SignUp route
   { path: 'activity', component: ActivityComponent },  // Activity route
   { path: 'createclass', component: CreateclassComponent },  // Create Class route
   { path: 'joinclass', component: JoinclassComponent },  // Join Class route
+  { path: 'checkinconnect', component: CheckinconnectComponent },  // Check in connect route
   { path: '**', redirectTo: '' } 
 ];
 

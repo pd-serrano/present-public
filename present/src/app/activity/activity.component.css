@@ -94,49 +94,56 @@
 }
 
 
-/* Dropdown styles */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-
-/* Dropdown content */
+/* Ensure dropdown stays open when focused */
 .dropdown-content {
   display: none;
   position: absolute;
-  right: 0; /* Align dropdown to the right of the menu icon */
+  right: 0;
   background-color: #220540;
   min-width: 160px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  margin-top: 10px; /* Space between the menu and dropdown */
-  border-radius: 5px; /* Slightly rounded corners for dropdown */
+  border-radius: 5px;
+  z-index: 100;
+  margin-top: 10px;
 }
 
+/* Ensure the dropdown stays open when the menu icon OR dropdown content is focused */
+.dropdown:focus-within .dropdown-content {
+  display: block;
+}
 
-/* Dropdown links */
+/* Make sure the menu icon is focusable */
+.menu-icon {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for menu icon */
+.menu-icon:hover {
+  background-color: #3E1A7C;
+}
+
+/* Dropdown links styling */
 .dropdown-content a {
   color: white;
-  padding: 16px 20px; /* Increased padding for easier clickability */
+  padding: 16px 20px;
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 10px; /* Space between icon and text */
-  transition: background-color 0.3s ease; /* Smooth background change on hover */
+  gap: 10px;
+  transition: background-color 0.3s ease;
 }
 
-
+/* Hover effect for dropdown items */
 .dropdown-content a:hover {
-  background-color: #575757; /* Darker background on hover */
-  border-radius: 5px; /* Rounded corners for hover effect */
+  background-color: #575757;
+  border-radius: 5px;
 }
 
-
-/* Show dropdown when menu icon is clicked */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
  
   /* Main Section */
   .input-field {
@@ -159,7 +166,7 @@
  
   .search-container {
     position: absolute;
-    top: 80px; /* Adjust this to place it below the navbar */
+    top: 100px; /* Adjust this to place it below the navbar */
     right: 20px; /* Align to the right side with some margin */
     display: flex;
     align-items: center;

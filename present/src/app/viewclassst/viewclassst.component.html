@@ -14,29 +14,29 @@
             <nav class="navbar">
                 <h1 class="app-name">Present!</h1>
                 <div class="icon-container">
-                    <a href="#" class="notification-link">
-                        <i class="fas fa-bell notification-icon"></i>
+                    <i class="fas fa-bell notification-icon"></i>
+      
+      
+            <!-- Dropdown Menu -->
+            <div class="dropdown">
+                <div class="menu-icon" tabindex="0">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="dropdown-content">
+                    <a href="#">
+                        <i class="fas fa-cogs"></i> Manage Class
                     </a>
-                    <!-- Menu Dropdown Added -->
-                    <div class="dropdown">
-                        <a href="#" class="menu-link">
-                            <i class="fas fa-bars menu-icon"></i>
-                        </a>
-                        <div class="dropdown-content">
-                            <a href="#">
-                                <i class="fas fa-cogs"></i> Manage Class
-                            </a>
-                            <a href="#">
-                                <i class="fas fa-plus-circle"></i> Create Class
-                            </a>
-                            <a href="#">
-                                <i class="fas fa-user-plus"></i> Join Class
-                            </a>
-                        </div> <!-- Close dropdown-content -->
-                    </div> <!-- Close dropdown -->
-                </div> <!-- Close icon-container -->
-            </nav>
-        </header>
+                    <a [routerLink]="['/createclass']">
+                        <i class="fas fa-plus-circle"></i> Create Class
+                    </a>
+                    <a [routerLink]="['/joinclass']">
+                        <i class="fas fa-user-plus"></i> Join Class
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>            
+</header>
 
 
         <main>
@@ -114,27 +114,27 @@
 
 
         <footer class="bottom-nav">
-            <a href="#" class="nav-item">
-                <i class="fas fa-home"></i>
-                <span>Home</span>
-            </a>
-            <a href="#" class="nav-item">
-                <i class="fas fa-tasks"></i>
-                <span>Activities</span>
-            </a>
-            <a href="#" class="nav-item active">
-                <i class="fas fa-check-circle"></i>
-                <span>Check-In</span>
-            </a>
-            <a href="#" class="nav-item">
-                <i class="fas fa-chalkboard"></i>
-                <span>Classes</span>
-            </a>
-            <a href="#" class="nav-item">
-                <i class="fas fa-user"></i>
-                <span>Profile</span>
-            </a>
-        </footer>
+            <a [routerLink]="['/home']" class="nav-item">
+                  <i class="fas fa-home"></i>
+                  <span>Home</span>
+              </a>
+              <a [routerLink]="['/activity']" class="nav-item activities">
+                  <i class="fas fa-tasks"></i>
+                  <span>Activities</span>
+              </a>
+              <a [routerLink]="['/checkinconnect']" class="nav-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Check-In</span>
+              </a>
+              <a [routerLink]="['/classes']" class="nav-item active">
+                  <i class="fas fa-chalkboard"></i>
+                  <span>Classes</span>
+              </a>
+              <a [routerLink]="['/profile']" class="nav-item">
+                  <i class="fas fa-user"></i>
+                  <span>Profile</span>
+              </a>
+          </footer>
     </div>
 </body>
 </html>
