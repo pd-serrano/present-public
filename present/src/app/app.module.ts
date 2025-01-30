@@ -15,6 +15,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { ActivityComponent } from './activity/activity.component';
 import { CreateclassComponent } from './createclass/createclass.component';
 import { JoinclassComponent } from './joinclass/joinclass.component';
+import { CheckinconnectComponent } from './checkinconnect/checkinconnect.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { JoinclassComponent } from './joinclass/joinclass.component';
     ActivityComponent,
     CreateclassComponent,
     JoinclassComponent,
+    CheckinconnectComponent,
   ],
   imports: [
     BrowserModule,
