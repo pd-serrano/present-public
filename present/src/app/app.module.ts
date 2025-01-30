@@ -11,6 +11,11 @@ import { ViewclassenrolledComponent } from './viewclassenrolled/viewclassenrolle
 import { CheckinnotComponent } from './checkinnot/checkinnot.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { ActivityComponent } from './activity/activity.component';
+import { CreateclassComponent } from './createclass/createclass.component';
+import { JoinclassComponent } from './joinclass/joinclass.component';
+import { CheckinconnectComponent } from './checkinconnect/checkinconnect.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +28,12 @@ import { ProfileComponent } from './profile/profile.component';
     ViewclassenrolledComponent,
     CheckinnotComponent,
     LoginComponent,
-    ProfileComponent  // Declare the ClassesComponent here
+    ProfileComponent,  // Declare the ClassesComponent here
+    SignUpComponent,
+    ActivityComponent,
+    CreateclassComponent,
+    JoinclassComponent,
+    CheckinconnectComponent
   ],
   imports: [
     BrowserModule,

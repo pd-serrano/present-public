@@ -30,78 +30,89 @@
     flex: 1;
   }
  
-  /* Icon container for notification */
-  .icon-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-shrink: 0;
-  }
+/* Icon Container */
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icons */
+}
+
+
+/* Notification icon */
+.notification-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #ffffff;
+}
+
  
-  /* Notification icon */
-  .notification-link {
-    color: #fff;
-    margin-right: 35px;
-    font-size: 1.5rem;
-    margin-top: 5px;
-  }
- 
- 
-  /* Hamburger Menu */
-  .dropdown {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    z-index: 1000;
-  }
- 
-  #menu-toggle {
-    display: none;
-  }
- 
-  .menu-label {
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    color: #fff;
-  }
- 
-  /* Dropdown Menu */
-  .dropdown-content {
-    display: none;
-    background-color: #220540;
-    padding: 10px;
-    border-radius: 8px;
-    margin-top: 10px;
-  }
- 
-  .dropdown-content a {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
- 
-  /* Hover effect for dropdown items */
-  .dropdown-content a:hover {
-    background-color: #8E58A2;
-    border-radius: 5px;
-  }
- 
-  .dropdown-content a i {
-    margin-right: 10px;
-  }
- 
-  #menu-toggle:checked + .menu-label + .dropdown-content {
-    display: block;
-  }
- 
-  .create-btn:hover {
-    background: #8E58A2;
-  }
+/* Menu icon */
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 8px; /* Increase clickable area of menu button */
+  border-radius: 4px; /* Add slight border radius for better aesthetics */
+  transition: background-color 0.3s ease; /* Smooth background change on hover */
+}
+
+
+/* Menu icon hover effect */
+.menu-icon:hover {
+  background-color: #3E1A7C; /* Darken the button when hovered */
+}
+
+
+/* Ensure dropdown stays open when focused */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #220540;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 100;
+  margin-top: 10px;
+}
+
+/* Ensure the dropdown stays open when the menu icon OR dropdown content is focused */
+.dropdown:focus-within .dropdown-content {
+  display: block;
+}
+
+/* Make sure the menu icon is focusable */
+.menu-icon {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for menu icon */
+.menu-icon:hover {
+  background-color: #3E1A7C;
+}
+
+/* Dropdown links styling */
+.dropdown-content a {
+  color: white;
+  padding: 16px 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-content a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
  
   /* Profile container */
   .profile-container {
@@ -185,7 +196,7 @@
   .teaching-text {
     position: relative;
     right: 9%;
-    top: 300px;
+    top: 290px;
     margin-bottom: 20px;
     text-align: center;
     font-size: 17px;
@@ -241,7 +252,7 @@
   .enrolled-text {
     position: relative;
     right: 9%;
-    top: 380px;
+    top: 375px;
     margin-bottom: 70px;
     text-align: center;
     font-size: 17px;
