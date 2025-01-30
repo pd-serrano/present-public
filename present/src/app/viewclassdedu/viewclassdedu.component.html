@@ -40,22 +40,26 @@
 
 
         <main>
-          <!-- Class 1 Container -->
           <div class="class-container">
-            <h2 class="class-name">Class 1</h2>
-            <div class="time-info">
-              <div class="time-section">
-                <div>Start Time</div>
-                <div>Grace Period</div>
+              <h2 class="class-name">Class 1</h2>
+              <div class="time-info">
+                  <div class="time-section">
+                      <label for="start-time">Start Time</label>
+                      <input type="time" id="start-time" name="start-time">
+                      
+                      <label for="grace-period">Grace Period</label>
+                      <input type="time" id="grace-period" name="grace-period">
+                  </div>
+                  <div class="time-section">
+                      <label for="late-threshold">Late Threshold</label>
+                      <input type="time" id="late-threshold" name="late-threshold">
+                      
+                      <label for="cutoff-time">Cutoff Time</label>
+                      <input type="time" id="cutoff-time" name="cutoff-time">
+                  </div>
               </div>
-              <div class="time-section">
-                <div>Late Threshold</div>
-                <div>Cutoff Time</div>
-              </div>
-            </div>
-            <button class="start-class-btn">START CLASS</button>
+              <button class="start-class-btn">START CLASS</button>
           </div>
-
 
           <!-- Attendance Section -->
           <div class="attendance-container">
