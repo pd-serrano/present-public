@@ -7,10 +7,126 @@
 }
 
 
+
+
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+}
+
+/* Style for the time input section */
+.time-section {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.time-section label {
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.time-section input {
+    width: 100%;
+    padding: 0px;
+    margin-top: 0px;
+    border-radius: 0px;
+    border: 1px solid #A06CD5;
+    background-color: #061A29;
+    color: white;
+    font-size: 14px;
+}
+
+/* Style for better spacing */
+.time-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 1px;
+    margin-bottom: 10px;
+}
+
+/* Placeholder color */
+.time-section input::placeholder {
+    color: #A06CD5;
+    opacity: 0.7;
+}
+
+/* Start Class Button */
+.start-class-btn {
+    background-color: #A06CD5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 13px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.start-class-btn:hover {
+    background-color: #8A57C1;
+}
+
+/* Style for the time input section */
+.time-section {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+
+.time-section label {
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+.time-section input {
+    width: 100%;
+    padding: 0px;
+    margin-top: 0px;
+    border-radius: 0px;
+    border: 1px solid #A06CD5;
+    background-color: #061A29;
+    color: white;
+    font-size: 14px;
+}
+
+
+/* Style for better spacing */
+.time-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 1px;
+    margin-bottom: 10px;
+}
+
+
+/* Placeholder color */
+.time-section input::placeholder {
+    color: #A06CD5;
+    opacity: 0.7;
+}
+
+
+/* Start Class Button */
+.start-class-btn {
+    background-color: #A06CD5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 13px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+
+.start-class-btn:hover {
+    background-color: #8A57C1;
 }
 
 
@@ -27,6 +143,8 @@ html, body {
 }
 
 
+
+
 /* Navbar */
 .navbar {
     background-color: #220540; /* Dark purple color for the navbar */
@@ -40,11 +158,15 @@ html, body {
 }
 
 
+
+
 /* App Name */
 .app-name {
     font-size: 1.5rem;
     margin: 0;
 }
+
+
 
 
 /* Icon Container */
@@ -53,6 +175,7 @@ html, body {
     justify-content: flex-end;
     align-items: center;
 }
+
 
 /* Notification and Menu Icons */
 .notification-icon,
@@ -63,11 +186,13 @@ html, body {
     color: #ffffff;
 }
 
+
 /* Dropdown Menu */
 .dropdown {
     position: relative;
     display: inline-block;
 }
+
 
 /* Dropdown content */
 .dropdown-content {
@@ -82,6 +207,7 @@ html, body {
     border-radius: 5px; /* Slightly rounded corners for dropdown */
 }
 
+
 /* Dropdown links */
 .dropdown-content a {
     color: white;
@@ -93,25 +219,30 @@ html, body {
     transition: background-color 0.3s ease; /* Smooth background change on hover */
 }
 
+
 .dropdown-content a:hover {
     background-color: #575757; /* Darker background on hover */
     border-radius: 5px; /* Rounded corners for hover effect */
 }
+
 
 /* Show dropdown when menu icon is clicked */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
+
 /* Class Section */
 .class-container {
     width: 100%;
     margin: 75px auto 30px; /* Adjusted margin */
     background-color: #102B3F; /* Dark teal */
-    padding: 20px;
+    padding: 10px;
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+
 
 
 /* Class Name */
@@ -124,12 +255,16 @@ html, body {
 }
 
 
+
+
 /* Time Info */
 .time-info {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
+
+
 
 
 /* Time Section */
@@ -140,11 +275,15 @@ html, body {
 }
 
 
+
+
 /* Time Section Div */
 .time-section div {
     color: white;
     font-size: 14px;
 }
+
+
 
 
 /* Start Class Button */
@@ -160,9 +299,13 @@ html, body {
 }
 
 
+
+
 .start-class-btn:hover {
     background-color: #8A57C1; /* Darker purple */
 }
+
+
 
 
 /* Attendance Section */
@@ -175,12 +318,16 @@ html, body {
 }
 
 
+
+
 /* Attendance Date */
 .attendance-date {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
+
+
 
 
 /* Calendar Icon */
@@ -191,11 +338,15 @@ html, body {
 }
 
 
+
+
 /* Date Text */
 .date-text {
     color: white;
     font-size: 16px;
 }
+
+
 
 
 /* Attendance Table */
@@ -205,10 +356,14 @@ html, body {
 }
 
 
+
+
 .attendance-table table {
     width: 100%;
     border-collapse: collapse;
 }
+
+
 
 
 .attendance-table th,
@@ -220,10 +375,14 @@ html, body {
 }
 
 
+
+
 .attendance-table th {
     background-color: #220540; /* Dark purple background for headers */
     font-weight: bold;
 }
+
+
 
 
 .attendance-table tr:nth-child(even) {
@@ -231,9 +390,13 @@ html, body {
 }
 
 
+
+
 .attendance-table tr:nth-child(odd) {
     background-color: #061A29; /* Dark blue background for odd rows */
 }
+
+
 
 
 .attendance-table td {
@@ -241,9 +404,13 @@ html, body {
 }
 
 
+
+
 .attendance-table td:hover {
     background-color: #A06CD5; /* Hover effect on table cells */
 }
+
+
 
 
 /* Bottom Navigation Bar */
@@ -260,6 +427,8 @@ html, body {
 }
 
 
+
+
 /* Nav Items */
 .nav-item {
     text-align: center;
@@ -270,6 +439,8 @@ html, body {
 }
 
 
+
+
 /* Nav Item Icons */
 .nav-item i {
     font-size: 1.5rem;
@@ -278,12 +449,18 @@ html, body {
 }
 
 
+
+
 /* Active Nav Item */
 .nav-item.active {
     color: #6200ea; /* Highlight active item with a purple color */
 }
 
 
+
+
 .nav-item.active i {
     color: #6200ea; /* Active icon color */
 }
+
+
