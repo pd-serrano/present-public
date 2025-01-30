@@ -15,7 +15,6 @@ import { CreateclassComponent } from './createclass/createclass.component'; // C
 import { JoinclassComponent } from './joinclass/joinclass.component'; // JoinClassComponent
 import { CheckinconnectComponent } from './checkinconnect/checkinconnect.component';
 
-
 const routes: Routes = [
   { path: '', component: HomeComponent },         // Home page route
   { path: 'classes', component: ClassesComponent }, 

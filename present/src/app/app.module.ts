@@ -28,12 +28,12 @@ import { CheckinconnectComponent } from './checkinconnect/checkinconnect.compone
     ViewclassenrolledComponent,
     CheckinnotComponent,
     LoginComponent,
-    ProfileComponent,  // Declare the ClassesComponent here
+    ProfileComponent,
     SignUpComponent,
     ActivityComponent,
     CreateclassComponent,
     JoinclassComponent,
-    CheckinconnectComponent
+    CheckinconnectComponent,
   ],
   imports: [
     BrowserModule,

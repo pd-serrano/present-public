@@ -13,7 +13,6 @@ html, body {
     padding: 0;
 }
 
-
 /* Style for the time input section */
 .time-section {
     display: flex;
@@ -21,13 +20,11 @@ html, body {
     width: 45%;
 }
 
-
 .time-section label {
     color: white;
     font-size: 14px;
     margin-top: 10px;
 }
-
 
 .time-section input {
     width: 100%;
@@ -40,7 +37,6 @@ html, body {
     font-size: 14px;
 }
 
-
 /* Style for better spacing */
 .time-info {
     display: flex;
@@ -49,13 +45,11 @@ html, body {
     margin-bottom: 10px;
 }
 
-
 /* Placeholder color */
 .time-section input::placeholder {
     color: #A06CD5;
     opacity: 0.7;
 }
-
 
 /* Start Class Button */
 .start-class-btn {
@@ -69,11 +63,9 @@ html, body {
     font-size: 16px;
 }
 
-
 .start-class-btn:hover {
     background-color: #8A57C1;
 }
-
 
 /* Container styles */
 .container {

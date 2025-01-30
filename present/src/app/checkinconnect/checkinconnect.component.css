@@ -10,9 +10,6 @@ body {
     height: 100vh;
 }
 
-
-
-
 /* Centering Content */
 .centered-content {
     display: flex;
@@ -23,9 +20,6 @@ body {
     flex-grow: 1;
 }
 
-
-
-
 /* Container styles */
 .container {
     display: flex;
@@ -34,9 +28,6 @@ body {
     height: 100%;
     padding-bottom: 60px; /* Space for the footer */
 }
-
-
-
 
 /* Navbar styles */
 .navbar {
@@ -49,50 +40,34 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-
-
-
 .app-name {
     font-size: 1.5rem;
     margin: 0;
 }
 
-
-
-
- /* Icon Container */
- .icon-container {
+/* Icon Container */
+.icon-container {
     display: flex;
     align-items: center;
     gap: 10px; /* Space between icons */
-  }
-  
-  
-  /* Notification icon */
-  .notification-icon {
+}
+
+/* Notification icon */
+.notification-icon {
     font-size: 1.5rem;
     cursor: pointer;
     color: #ffffff;
-  }
-  
-   
-  /* Menu icon */
-  .menu-icon {
+}
+
+/* Menu icon */
+.menu-icon {
     font-size: 1.5rem;
-    cursor: pointer;
-    color: #ffffff;
-    padding: 8px; /* Increase clickable area of menu button */
-    border-radius: 4px; /* Add slight border radius for better aesthetics */
-    transition: background-color 0.3s ease; /* Smooth background change on hover */
-  }
-  
-  
-  /* Menu icon hover effect */
-  .menu-icon:hover {
-    background-color: #3E1A7C; /* Darken the button when hovered */
-  }
-  
-  
+        cursor: pointer;
+        color: #ffffff;
+        padding: 8px; /* Increase clickable area of menu button */
+        border-radius: 4px; /* Add slight border radius for better aesthetics */
+        transition: background-color 0.3s ease; /* Smooth background change on hover */
+
   /* Ensure dropdown stays open when focused */
   .dropdown-content {
     display: none;
@@ -121,27 +96,27 @@ body {
     transition: background-color 0.3s ease;
   }
   
-  /* Hover effect for menu icon */
-  .menu-icon:hover {
-    background-color: #3E1A7C;
-  }
+/* Menu icon hover effect */
+.menu-icon:hover {
+    background-color: #3E1A7C; /* Darken the button when hovered */
+}
   
-  /* Dropdown links styling */
-  .dropdown-content a {
+/* Dropdown links styling */
+.dropdown-content a {
     color: white;
-    padding: 16px 20px;
+    padding: 16px 20px; /* Increased padding for easier clickability */
     text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 10px;
-    transition: background-color 0.3s ease;
-  }
+    gap: 10px; /* Space between icon and text */
+    transition: background-color 0.3s ease; /* Smooth background change on hover */
+}
   
-  /* Hover effect for dropdown items */
-  .dropdown-content a:hover {
-    background-color: #575757;
-    border-radius: 5px;
-  }
+/* Hover effect for dropdown items */
+.dropdown-content a:hover {
+    background-color: #575757; /* Darker background on hover */
+    border-radius: 5px; /* Rounded corners for hover effect */
+}
 
 /* Error Message Styles */
 .error-message {
@@ -153,24 +128,15 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-
-
-
 .error-message h2 {
     color: #A06CD5;
     margin-bottom: 15px;
 }
 
-
-
-
 .error-message ul {
     list-style-type: disc;
     margin-left: 20px;
 }
-
-
-
 
 .error-message p,
 .error-message li {
@@ -179,10 +145,6 @@ body {
     text-align: left;
 }
 
-
-
-
-/* Footer styles */
 .bottom-nav {
     background-color: #220540;
     display: flex;
@@ -195,9 +157,6 @@ body {
     width: 100%;
 }
 
-
-
-
 .nav-item {
     text-align: center;
     color: #fff;
@@ -206,27 +165,16 @@ body {
     flex: 1;
 }
 
-
-
-
 .nav-item i {
     font-size: 1.5rem;
     display: block;
     margin-bottom: 5px;
 }
 
-
-
-
 .nav-item.active {
     color: #A06CD5;
 }
 
-
-
-
 .nav-item.active i {
     color: #A06CD5;
 }
-
-
