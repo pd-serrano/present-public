@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Present! - Check-In</title>
-    <link rel="stylesheet" href="checkinnot.component.css">
+    <link rel="stylesheet" href="checkinconnect.component.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
@@ -15,8 +15,6 @@
                 <h1 class="app-name">Present!</h1>
                 <div class="icon-container">
                     <i class="fas fa-bell notification-icon"></i>
-
-
                     <div class="dropdown" tabindex="0">
                         <div class="menu-icon" tabindex="0">
                             <i class="fas fa-bars"></i>
@@ -26,27 +24,19 @@
                             <a [routerLink]="['/createclass']"><i class="fas fa-plus-circle"></i> Create Class</a>
                             <a [routerLink]="['/joinclass']"><i class="fas fa-user-plus"></i> Join Class</a>
                         </div>
-                    </div>                        
-        </div>
-    </nav>
+                    </div>
+                </div>
+            </nav>
         </header>
        
         <main class="centered-content">
             <section class="error-message">
-                <h2>Connection Error</h2>
-                <p>It seems like you're not connected to your professor's network or have joined the wrong one. Please double-check your connection and try again.</p>
-
-
-                <ul class="checklist">
-                    <li>Connect to the correct network provided by your professor.</li>
-                    <li>Ensure your device's Wi-Fi is enabled and stable.</li>
-                </ul>
-
-
-                <p>Once you're connected, refresh the app and proceed with attendance.</p>
+                <h2>Attendance Confirmation</h2>
+                <p>You are checking in for:</p>
+                <p>CLASS NAME: </p>
+                <p>SECTION: </p>
             </section>
         </main>
-
 
         <footer class="bottom-nav">
             <a [routerLink]="['/home']" class="nav-item">
@@ -57,7 +47,7 @@
                   <i class="fas fa-tasks"></i>
                   <span>Activities</span>
               </a>
-              <a [routerLink]="['/checkinnot']" class="nav-item active">
+              <a [routerLink]="['/checkinconnect']" class="nav-item active">
                   <i class="fas fa-check-circle"></i>
                   <span>Check-In</span>
               </a>
@@ -70,7 +60,6 @@
                   <span>Profile</span>
               </a>
           </footer>
-      </div>
-
+    </div>
 </body>
 </html>

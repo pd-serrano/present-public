@@ -14,48 +14,50 @@
           <nav class="navbar">
             <h1 class="app-name">Present!</h1>
             <div class="icon-container">
-              <a href="#" class="notification-link">
-                <i class="fas fa-bell notification-icon"></i>
+              <i class="fas fa-bell notification-icon"></i>
+
+
+      <!-- Dropdown Menu -->
+      <div class="dropdown">
+          <div class="menu-icon" tabindex="0">
+              <i class="fas fa-bars"></i>
+          </div>
+          <div class="dropdown-content">
+              <a href="#">
+                  <i class="fas fa-cogs"></i> Manage Class
               </a>
-              <!-- Menu Dropdown Added -->
-              <div class="dropdown">
-                <a href="#" class="menu-link">
-                  <i class="fas fa-bars menu-icon"></i>
-                </a>
-                <div class="dropdown-content">
-                    <a href="#">
-                        <i class="fas fa-cogs"></i> Manage Class
-                    </a>
-                    <a href="#">
-                        <i class="fas fa-plus-circle"></i> Create Class
-                    </a>
-                    <a href="#">
-                        <i class="fas fa-user-plus"></i> Join Class
-                    </a>
-                </div> <!-- Close dropdown-content -->
-              </div> <!-- Close dropdown -->
-            </div>
-          </nav>
-        </header>
+              <a [routerLink]="['/createclass']">
+                  <i class="fas fa-plus-circle"></i> Create Class
+              </a>
+              <a [routerLink]="['/joinclass']">
+                  <i class="fas fa-user-plus"></i> Join Class
+              </a>
+          </div>
+      </div>
+  </div>
+</nav>        
+</header>
 
 
         <main>
-          <!-- Class 1 Container -->
           <div class="class-container">
-            <h2 class="class-name">Class 1</h2>
-            <div class="time-info">
-              <div class="time-section">
-                <div>Start Time</div>
-                <div>Grace Period</div>
+              <h2 class="class-name">Class 1</h2>
+              <div class="time-info">
+                  <div class="time-section">
+                      <label for="start-time">Start Time</label>
+                      <input type="time" id="start-time" name="start-time">
+                      <label for="grace-period">Grace Period</label>
+                      <input type="time" id="grace-period" name="grace-period">
+                  </div>
+                  <div class="time-section">
+                      <label for="late-threshold">Late Threshold</label>
+                      <input type="time" id="late-threshold" name="late-threshold">
+                      <label for="cutoff-time">Cutoff Time</label>
+                      <input type="time" id="cutoff-time" name="cutoff-time">
+                  </div>
               </div>
-              <div class="time-section">
-                <div>Late Threshold</div>
-                <div>Cutoff Time</div>
-              </div>
-            </div>
-            <button class="start-class-btn">START CLASS</button>
+              <button class="start-class-btn" [routerLink]="['/viewclassst']">START CLASS</button>
           </div>
-
 
           <!-- Attendance Section -->
           <div class="attendance-container">
@@ -65,12 +67,16 @@
             </div>
 
 
+
+
             <div class="attendance-status">
               <div class="status-option present">Present</div>
               <div class="status-option absent">Absent</div>
               <div class="status-option late">Late</div>
               <div class="status-option excused">Excused</div>
             </div>
+
+
 
 
             <div class="attendance-list">
@@ -85,24 +91,26 @@
         </main>
 
 
+
+
         <footer class="bottom-nav">
-            <a href="#" class="nav-item">
+          <a [routerLink]="['/home']" class="nav-item">
                 <i class="fas fa-home"></i>
                 <span>Home</span>
             </a>
-            <a href="#" class="nav-item">
+            <a [routerLink]="['/activity']" class="nav-item activities">
                 <i class="fas fa-tasks"></i>
                 <span>Activities</span>
             </a>
-            <a href="#" class="nav-item active">
+            <a [routerLink]="['/checkinconnect']" class="nav-item">
                 <i class="fas fa-check-circle"></i>
                 <span>Check-In</span>
             </a>
-            <a href="#" class="nav-item">
+            <a [routerLink]="['/classes']" class="nav-item active">
                 <i class="fas fa-chalkboard"></i>
                 <span>Classes</span>
             </a>
-            <a href="#" class="nav-item">
+            <a [routerLink]="['/profile']" class="nav-item">
                 <i class="fas fa-user"></i>
                 <span>Profile</span>
             </a>
