@@ -1,4 +1,5 @@
 // Using a transpiler
+import { input } from '@angular/core';
 import find from 'local-devices'
 
 // Find all local network devices.
@@ -74,15 +75,40 @@ find({ arpPath: '/usr/sbin/arp' }).then(devices => {
 })
 
 export class QueryDevices {
-  isPresentIP(addressIP: string) {
-    console.log("START");
-    find({ address: '192.168.254.254' }).then(device => {
-      if (device) {
-        console.log("FOUND");
-      }
-      else {
-        console.log("NOT FOUND");
-      }
-    })
+  targetAddress: string = "";
+  targetType: string = "";
+  isAddressMatch: boolean = false;
+
+  setAddress(input: string) {
+    this.targetAddress = input;
+  }
+  getAddress() {
+    return this.targetAddress;
+  }
+  setType(input: string) {
+    this.targetType = input;
+  }
+  getType() {
+    return this.targetType;
+  }
+  setMatch(input: boolean) {
+    this.isAddressMatch = input;
+  }
+  getMatch() {
+    return this.isAddressMatch;
+  }
+
+  evaluateMatch() {
+    console.log("BEGIN EVALUATE");
+    if (this.getType() == "IP") {
+      find({ address: this.getAddress() }).then(device => {
+        if (device) {
+          console.log("FOUND : " + this.getAddress());
+        }
+        else {
+          console.log("NOT FOUND : " + this.getAddress());
+        }
+      })
+    }
   }
 }

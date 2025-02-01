@@ -67,7 +67,7 @@ body {
         padding: 8px; /* Increase clickable area of menu button */
         border-radius: 4px; /* Add slight border radius for better aesthetics */
         transition: background-color 0.3s ease; /* Smooth background change on hover */
-
+}
   /* Ensure dropdown stays open when focused */
   .dropdown-content {
     display: none;
